@@ -1,0 +1,5 @@
+package model;
+
+public enum SubscriptionType {
+	NORMAL("Normal"), PREMIUM("Premium");
+}
