@@ -6,6 +6,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloWorld {
+	
+	@RequestMapping("/index")
+	public void index() {
+	}
+	
 	@RequestMapping("/welcome")
 	public ModelAndView helloWorld() {
 		String message = "<br><div style='text-align:center;'>"
@@ -15,6 +20,7 @@ public class HelloWorld {
 	
 	@RequestMapping("/login")
 	public void login() {
+		return new ModelAndView("")
 	}
 	
 	@RequestMapping("/registration")

@@ -1,9 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<jsp:include page="header.jsp"/>
 <body>
-<h2>Regisztr�ci�</h2>
+<jsp:include page="header.jsp"/>
+<h2>Regisztráció</h2>
+<form>
+<div>
+   <label for="name">Név:</label>
+   <input type="text" id="name" name="user_name">
+</div>
+<div>
+   <label for="passwd">Jelszó:</label>
+   <input type="password" id="passwd" name="user_passwd">
+</div>
+<div>
+   <label for="passwdagain">Jelszó újra:</label>
+   <input type="password" id="passwdagain" name >
+</div>
+<div>
+	<label for="email">E-mail:</label>
+	<input type="text" id="email" name="user_email">
+</div>
+<div>
+	<label>Előfizetés típusa:</label>
+	<input type="radio" name="normal_substype" value="normal"> Normál 
+	<input type="radio" name="premium_substype" value="premium"> Prémium
+</div>
+<div>
+   <input type="submit" id="btn" value="Regisztrálok">
+</div>
+</form>
 </body>
 </html>

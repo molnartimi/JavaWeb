@@ -1,15 +1,30 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+    
+<!DOCTYPE html>
 <html>
-<jsp:include page="WEB-INF/jsp/header.jsp"/>
-<body>
-	<br>
-	<div style="text-align:center">
-		<h2>
-			Hey You..!! This is your 1st Spring MCV Tutorial..<br> <br>
-		</h2>
-		<h3>
-			<a href="welcome.html">Click here to See Welcome Message... </a>(to
-			check Spring MVC Controller... @RequestMapping("/welcome"))
-		</h3>
-	</div>
-</body>
+	<head>
+		<title>Online Library</title>
+      	
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<link type="text/css" rel="stylesheet" href="<c:url value="/resources/css/materialize.min.css" />">
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    	<script type="text/javascript" src="<c:url value="/resources/js/materialize.min.js" />" ></script>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+		      <a href="#" class="brand-logo">Online Library</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="index.html">Kezdőlap</a></li>
+		        <li><a href="login">Bejelentkezés</a></li>
+		        <li><a href="registration.html">Regisztráció</a></li>
+		      </ul>
+		    </div>
+		</nav>
+		<div>
+			${app}
+		</div> 
+	</body>
 </html>
